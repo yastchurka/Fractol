@@ -1,0 +1,24 @@
+// Define the starting points
+	middleR = -0.75
+	middleI = 0
+	rangeR = 3.5
+	rangeI = 2;
+	
+// Define the boundaries of the Mandelbrot set:
+double xmin, xmax, ymin, ymax
+
+//	Define the maximum number of iterations
+int max_iterations = 100;
+	
+//	Create two loops to read the pixels on X and Y axis to compute the set
+while (i < WIDTH)
+	while (y < HEIGHT)
+		//Calculate where are we on the X and Y axis in percents
+		xProc = x / WIDTH
+		yProc = y / HEIGHT
+	
+		cReal = xProc * rangeR + middleR - rangeR / 2
+		cImaginary = yProc * rangeI + middleI - rangeI / 2
+		 
+--- IDEAS:
+Use floats instead of doubles, to save up some computing power?
